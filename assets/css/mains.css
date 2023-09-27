@@ -455,6 +455,37 @@ h3 {
   gap: 1rem;
 }
 
+.footer-logo p {
+  max-width: 320px;
+  font-size: 0.875rem;
+}
+
+.footer-logo ul {
+  margin-top: 1rem;
+  flex-direction: row;
+}
+
+.footer-logo ul a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  transition: background-color 0.3s ease-out;
+}
+
+.footer-logo ul a:hover {
+  background-color: var(--color-white);
+}
+
+.footer-logo ul a:hover i {
+  color: var(--color-primary);
+}
+
 .footer-contact a {
   display: flex;
   align-items: center;
@@ -464,7 +495,7 @@ h3 {
 .section-hero {
   position: relative;
   height: 60vh;
-  max-height: 300px;
+  max-height: 350px;
   padding: 2rem;
   background-position: center;
   background-size: cover;
@@ -505,6 +536,10 @@ h3 {
 
 .product .section-hero {
   background-image: url(../media/img_2.jpg);
+}
+
+.new .section-hero {
+  background-image: url(../media/img_4.jpg);
 }
 
 .about-content {
