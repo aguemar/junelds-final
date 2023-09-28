@@ -1,0 +1,54 @@
+.btn {
+  --btn-padding-x: 0.75rem;
+  --btn-padding-y: 2rem;
+  --btn-bg: transparent;
+  --btn-hover-bg: transparent;
+  --btn-color: inherit;
+  --btn-hover-color: inherit;
+  --btn-border-color: var(--btn-bg);
+  --btn-hover-border-color: var(--btn-hover-bg);
+  padding: var(--btn-padding-x) var(--btn-padding-y);
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+  border-color: var(--btn-hover-border-color);
+}
+
+.btn-primary {
+  --btn-bg: var(--color-primary);
+  --btn-hover-bg: var(--color-soft-primary);
+  --btn-color: var(--color-white);
+  --btn-hover-color: var(--color-white);
+  --btn-border-color: var(--btn-bg);
+}
+
+.btn-card {
+  --btn-padding-x: 0.5rem;
+  --btn-padding-y: 2rem;
+  --btn-bg: var(--color-bright-primary);
+  --btn-hover-bg: var(--color-soft-primary);
+  --btn-color: var(--color-primary);
+  --btn-hover-color: var(--color-white);
+  --btn-border-color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.btn-link-primary {
+  --btn-hover-color: var(--color-soft-primary);
+  --btn-color: var(--color-primary);
+}

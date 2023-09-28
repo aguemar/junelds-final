@@ -1,0 +1,151 @@
+:root {
+  --color-primary: hsl(216, 71%, 20%);
+  --color-dark-primary: hsl(216, 81%, 15%);
+  --color-deep-primary: hsl(216, 91%, 10%);
+  --color-soft-primary: hsl(216, 61%, 30%);
+  --color-light-primary: hsl(216, 51%, 60%);
+  --color-sky-primary: hsl(216, 51%, 80%);
+  --color-bright-primary: hsl(216, 80%, 97%);
+
+  --color-white: #ffffff;
+  --color-gray: #525252;
+  --color-light-gray: #a3a3a3;
+  --color-sky-gray: #d4d4d4;
+  --color-bright-gray: #f5f5f5;
+  --color-black: #000000;
+  --body-font-family: "Inter", sans-serif;
+  --body-font-size: 16px;
+  --body-font-weight: 400;
+  --body-line-height: 1.6;
+  --body-color: #191717;
+  --body-bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--body-font-family);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.875rem; /* 30px */
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-soft-primary);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 35rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  h3 {
+    font-size: 1.625rem; /* 26px */
+  }
+  .container {
+    max-width: 47rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.125rem; /* 34px */
+  }
+
+  h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  h3 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .container {
+    max-width: 61rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 74rem;
+  }
+}

@@ -1,0 +1,17 @@
+.maintenance {
+  padding: 5rem 0;
+  height: 60vh;
+  text-align: center;
+}
+
+.maintenance img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.maintenance p {
+  margin: 0 auto;
+  max-width: 750px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}

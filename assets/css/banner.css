@@ -1,0 +1,67 @@
+.banner {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--color-bright-primary);
+  color: var(--color-primary);
+}
+
+.banner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.banner-card {
+  width: 100%;
+}
+
+.banner-card img {
+  width: auto;
+  height: 50px;
+}
+
+.banner-card h3 {
+  font-family: var(--body-font-family);
+  font-size: 1rem;
+}
+
+.banner-card p {
+  color: var(--color-sfot-primary);
+  font-size: 0.875rem;
+}
+
+.banner-info {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.banner-info h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .banner-card {
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-card {
+    max-width: calc(33.33% - (1rem + (1rem / 3)));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-card {
+    max-width: calc(20% - (1rem + (3rem / 5)));
+  }
+  .banner-info {
+    justify-content: space-between;
+  }
+}
